@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/login_tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/account"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/login_et_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/login_tv_account"
+        android:layout_alignTop="@+id/login_tv_account"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/login_tv_account" />
+
+
+    <TextView
+        android:id="@+id/login_tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_below="@+id/login_tv_account"
+        android:layout_alignStart="@+id/login_tv_account"
+        android:layout_marginTop="20dp"
+        android:text="@string/password"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/login_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/login_et_account"
+        android:layout_alignStart="@+id/login_et_account"
+        android:layout_alignBottom="@+id/login_tv_password"
+        android:layout_alignTop="@+id/login_tv_password"
+        android:layout_marginEnd="20dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/yuanjiaojuxing"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/login_tv_2register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_bt_login"
+        android:layout_alignStart="@+id/login_tv_password"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="@string/register" />
+
+    <TextView
+        android:id="@+id/login_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/login_et_password"
+        android:layout_alignBottom="@+id/login_tv_2register"
+        android:text="@string/forgetpass"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">waveGame</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">快点注册吧</string>
+    <string name="nav_header_subtitle">不知道少点啥了.</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="author">我叫王建朝</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="little">小功能</string>
+    <string name="little1">小功能1</string>
+    <string name="little2">小功能2</string>
+    <string name="download">下载</string>
+    <string name="account">账  号:</string>
+    <string name="password">密  码:</string>
+    <string name="passwordagen">确  认:</string>
+    <string name="forgetpass">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="start">开服</string>
+    <string name="news">新闻</string>
+    <string name="actionsearch">搜索</string>
+    <string name="search">搜索</string>
+
+    <string-array name="spinner">
+        <item>BT手游</item>
+        <item>H5游戏</item>
+        <item>折扣手游</item>
+        <item>官方正版</item>
+        <item>GM版</item>
+        <item>单机破解</item>
+        <item>满VIP</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>即时</item>
+        <item>卡牌</item>
+        <item>动作</item>
+        <item>策略</item>
+        <item>回合</item>
+        <item>3D</item>
+        <item>传奇</item>
+        <item>挂机</item>
+        <item>Q版</item>
+        <item>魔兽</item>
+        <item>三国</item>
+        <item>国战</item>
+        <item>动漫</item>
+        <item>RPG</item>
+        <item>塔防</item>
+        <item>仙侠</item>
+        <item>格斗</item>
+        <item>角色</item>
+    </string-array>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/icon_start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/game_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon_start"
+        android:layout_alignTop="@+id/icon_start"/>
+
+    <TextView
+        android:id="@+id/server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/time"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon_start"
+        android:layout_below="@+id/game_start"
+        android:textColor="@color/colorRead"/>
+
+    <TextView
+        android:id="@+id/duction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_alignStart="@+id/time"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

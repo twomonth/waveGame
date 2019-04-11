@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <com.twomonth.wavegame.view.banner.BannerLayout
+        android:id="@+id/bannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:autoPlaying="true"
+        app:centerScale="1.3"
+        app:itemSpace="20"
+        app:layout_constraintBottom_toTopOf="@+id/recycle_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:moveSpeed="1.8"
+        app:orientation="horizontal">
+
+    </com.twomonth.wavegame.view.banner.BannerLayout>
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/vertical_tab"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:background="@drawable/yuanjiaojuxing"
+        android:paddingTop="5dp"
+        android:paddingStart="3dp"
+        android:paddingBottom="5dp"
+        app:indicator_color="#FFFFFF"
+        app:indicator_gravity="fill"
+        app:indicator_corners="10dp"
+        app:tab_height="30dp"
+        app:tab_margin="10dp"
+        app:tab_mode="scrollable"
+        app:layout_constraintBottom_toBottomOf="@+id/recycle_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recycle_home"
+        app:layout_constraintTop_toBottomOf="@+id/bannerLayout">
+
+    </q.rorbin.verticaltablayout.VerticalTabLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_tab"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerLayout">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>
