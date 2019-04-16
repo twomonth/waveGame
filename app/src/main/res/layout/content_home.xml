@@ -9,7 +9,7 @@
     tools:context=".activity.HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
-    <com.twomonth.wavegame.view.banner.BannerLayout
+    <com.yxh115.guild.view.banner.BannerLayout
         android:id="@+id/bannerLayout"
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -23,7 +23,7 @@
         app:moveSpeed="1.8"
         app:orientation="horizontal">
 
-    </com.twomonth.wavegame.view.banner.BannerLayout>
+    </com.yxh115.guild.view.banner.BannerLayout>
 
     <q.rorbin.verticaltablayout.VerticalTabLayout
         android:id="@+id/vertical_tab"

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.twomonth.wavegame">
+    package="com.yxh115.guild">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".WaveApplication"
+        android:name="com.yxh115.guild.WaveApplication"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@drawable/logo"
@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.yxh115.guild.activity.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -27,19 +27,19 @@
             </intent-filter>
         </activity>
         <!-- 闪屏页面 -->
-        <activity android:name=".activity.HomeActivity" />
+        <activity android:name="com.yxh115.guild.activity.HomeActivity" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.yxh115.guild.activity.LoginActivity"
             android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name="com.yxh115.guild.activity.RegisterActivity"
             android:theme="@style/Base.V7.Theme.AppCompat.Light.Dialog" />
-        <activity android:name=".activity.GameActivity" />
-        <activity android:name=".activity.KaifuActivity" />
-        <activity android:name=".activity.NewsActivity" />
-        <activity android:name=".activity.GameWebActivity" />
-        <activity android:name=".activity.SearchActivity" />
-        <activity android:name=".activity.NewsInfoActivity"></activity>
+        <activity android:name="com.yxh115.guild.activity.GameActivity" />
+        <activity android:name="com.yxh115.guild.activity.KaifuActivity" />
+        <activity android:name="com.yxh115.guild.activity.NewsActivity" />
+        <activity android:name="com.yxh115.guild.activity.GameWebActivity" />
+        <activity android:name="com.yxh115.guild.activity.SearchActivity" />
+        <activity android:name="com.yxh115.guild.activity.NewsInfoActivity"></activity>
     </application>
 
 </manifest>
